@@ -204,7 +204,7 @@ export enum InputFlags {
     left        = 1 << 2,
     down        = 1 << 3,
     right       = 1 << 4,
-    //godmode     = 1 << 5,
+    godmode     = 1 << 5,
     suicide     = 1 << 6,
     rightclick  = 1 << 7,
     levelup     = 1 << 8,
