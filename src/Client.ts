@@ -302,7 +302,7 @@ export default class Client {
                 // No AI
                 if (this.inputs.isPossessing && this.accessLevel !== config.AccessLevel.FullAccess) return;
 
-                /**if ((flags & InputFlags.godmode)) {
+                if ((flags & InputFlags.godmode)) {
                     if (this.accessLevel >= config.AccessLevel.BetaAccess) {
                         player.name.nametag |= NametagFlags.cheats;
                         this.devCheatsUsed = 1;
@@ -314,7 +314,7 @@ export default class Client {
                         if (!player.spawnProtectionEnded) player.spawnProtectionEnded = true;
                         else player.style.styleFlags ^= StyleFlags.invincibility;
                     }
-                } */
+                }
 
                 if ((flags & InputFlags.rightclick) && !(previousFlags & InputFlags.rightclick) && player.currentTank === DevTank.Developer) {
                     player.position.x = this.inputs.mouse.x;
