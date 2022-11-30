@@ -31,7 +31,7 @@ export enum CommandID {
     gameSetScore = "game_set_score",
     gameTeleport = "game_teleport",
     gameClaim = "game_claim",
-    //adminGodmode = "admin_godmode",
+    adminGodmode = "admin_godmode",
     adminSummon= "admin_summon",
     adminKillAll = "admin_kill_all",
     adminKillEntity = "admin_kill_entity",
@@ -80,11 +80,11 @@ export const commandDefinitions = {
         description: "Attempts claiming an entity of the given type",
         permissionLevel: AccessLevel.BetaAccess
     },
-     /**admin_godmode: {
+     admin_godmode: {
         id: CommandID.adminGodmode,
         description: "Toggles godmode",
         permissionLevel: AccessLevel.Godly
-    }, */
+    },
     admin_summon: {
         id: CommandID.adminSummon,
         usage: "[entityName] [?count] [?x] [?y]",
