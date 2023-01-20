@@ -26,7 +26,7 @@ import GameServer from "../Game";
 export default class FFAArena extends ArenaEntity {
     public constructor(game: GameServer) {
         super(game);
-        this.updateBounds(2000, 2000);
+        this.updateBounds(2500, 2500);
         this.arena.values.GUI |= GUIFlags.canUseCheats;
         }
 }
